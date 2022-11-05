@@ -1,13 +1,19 @@
 // Function to send email notification when the sign-up form is submitted
+
+// https://y9qnc0xpi9.execute-api.us-east-1.amazonaws.com/prod
 function submitToAPI(e) {
     e.preventDefault();
-    var API_URL = "FILL IN WITH THE URL PROVIDED BY API GATEWAY";
+    var API_URL = "https://y9qnc0xpi9.execute-api.us-east-1.amazonaws.com/prod";
 
     // Retrieve the email address and passwords from your form here.  As an example, in our sign up form we're
     // using the HTML "name" element to refer to the email, password, and password-confirm fields in the form
-    var email = $('input[name="email"]').val();
-    var password = $('input[name="password"]').val();
-    var confirm_password =$('input[name="confirm_password"]').val();
+  
+    // var email = $('input[name="email"]').val();
+    // var password = $('input[name="password"]').val();
+    // var confirm_password =$('input[name="confirm_password"]').val();
+  var email = $("#email-input").val();
+  var password = $("#password-input").val();
+  var confirm_password = $("#conrfim_password-input").val();
 
     // Perform any form validation you'd like in this section.  What should happen if a user provides an email without a domain?
     // (e.g. abc123 instead of abc123@example.com).  What if the provided passwords don't match?  Should there be any restrictions
@@ -30,7 +36,7 @@ function submitToAPI(e) {
         data: JSON.stringify(data),
         success: function() {
             // Can you think of anything you'd want to do to notify a customer that they've been sent a welcome email?
-        
+        alert("Thanks for contacting us, please check your email to view your welcome email!");
             // Clear the form data after submission
             $('#signup-form')[0].reset();
         },
