@@ -14,6 +14,56 @@
     <!-- Custom CSS-->
     <link rel="stylesheet" href="static/index.css">
 
+    <style>
+      .options{
+        border-radius: 20px;
+        border-color: silver;
+        background-color: transparent;
+        font-size: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .options1 button:hover {     
+        background-color: silver;    
+      }
+
+      .options2 button:hover{
+        background-color: silver;
+      }
+
+      .options3 button:hover{
+        background-color: silver;
+      }
+
+      .options4 button:hover{
+        background-color: silver;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      .access{
+        border-radius: 20px;
+        border-color: silver;
+        background-color: transparent;
+        font-size: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 40px;
+      }
+    </style>
+
     <title>NCAT Hackathon 2022 Amazon Landing Page [added test text here]</title>
   </head>
     
@@ -67,15 +117,41 @@
     <!-- Here is an example Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1>ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatum voluptate voluptatem accusantium praesentium consequuntur dolorum quas, reiciendis facilis harum tempora maiores placeat? Quibusdam est magni eius, minus modi aperiam.</h1>
+        <h1 style="text-align: center;">Welcome to</h1>
+        <img class="center" src="Amazon_prime_student.png">
+        <br>
+        <h1 style="text-align: center;">Please take a brief survey and gain access to hundreds of deals!</h1>
       </div>
     </div>
 
     <!-- Here is an example of how you might layout your page content -->
-    <h1>What are you interested in?</h1>
-    <h1>What are your hobbies?</h1>
-    <h1>Do you want to travel?</h1>
-    <h1>Are you interested in food delivery?</h1>
+    <div style="text-align: center;">
+      <h1>What are you interested in?</h1>
+      <div class="options1">
+        <button class="options">Phone Accessories</button>
+        <button class="options">Computers and Computer Accessories</button>
+        <button class="options">Health and Personal Care</button>
+      </div>
+      <h1>What are your hobbies?</h1>
+      <div class="options2">
+        <button class="options">Gaming</button>
+        <button class="options">Meditation</button>
+        <button class="options">Fiber Arts</button>
+        <button class="options">Reading</button>
+      </div>
+      <h1>Do you want to travel?</h1>
+      <div class="options3">
+        <button class="options">Yes</button>
+        <button class="options">No</button>
+      </div>
+      <h1>Are you interested in food delivery?</h1>
+      <div class="options4">
+        <button class="options">Yes</button>
+        <button class="options">No</button>
+        <br>
+        <br>
+        <button class="access" onclick="window.location.href='recommendations.html'">Access your savings!</button>
+      </div>
     </div>
     
 
