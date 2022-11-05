@@ -12,7 +12,77 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Custom CSS-->
-    <link rel="stylesheet" href="static/index.css">
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      
+.sidepanell {
+  position:relative;
+  height:100vh;
+  background-color:white;
+  width:20%;
+  min-width:100px;
+  margin-left:0;
+  z-index:2;
+  font-size:1.5em;
+  line-height:1.5em;
+  color:black;
+  font-family:Helvetica;
+  text-align:center;
+}
+.sidepanell:before {
+  content:'';
+  position:absolute;
+  height:100vh;
+  width:10px;
+  top:0;
+  left:100%;
+  background-image:linear-gradient(to left,#fff,rgba(0,0,0,0.3) 10px);
+  z-index:1;
+}
+.sidepanell span {
+  position:relative;
+  display:block;
+  width:calc(100%);
+  min-width:100px;  
+  padding:1em;
+  background-color:white;
+}
+.line {
+  height:1px;
+  width:calc(100% - 44px);
+  background-color:#E9D985;
+  margin:0 22px;
+}
+.circle {
+  position:absolute;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  font-size:16px;
+  background-color:red;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  top:calc(50% - 22px);
+  left:calc(100% - 22px);
+  z-index:3;
+  cursor:pointer;
+}
+.fa-chevron-left {
+  margin-right:5px;
+}
+.fa-exclamation {
+  margin-left:5px;
+}
+.hide {
+  display:none;
+}
+
+    </style>
 
     <title>NCAT Hackathon 2022 Amazon Landing Page</title>
   </head>
@@ -72,6 +142,28 @@
     </div>
 
     <!-- Here is an example of how you might layout your page content -->
+
+
+    
+    <div class="sidepanell" style = "float: left; border-style: solid;border-color:black;">
+  <span>
+    <h3>You're missing out! </h3>
+    <h6> As a Prime member, you haven't yet used the following benefits:</h6>
+    <div class="line"></div>
+    <img src="student universe.jpeg" style="height: 100%; width:110%; margin-top: 20%;margin-left: -5%;"></img>
+    <h6 style="margin-top: 10%;">Prime Student members save more on travel with up to 10% off already discounted flights, 10% back on hotels as an Amazon Gift Card post trip, and free premium customer support with every booking.</h6>
+    <a href="https://www.amazon.com/prime/offer/StudentUniverse/student-discount?ref=std_o_ss" style="font-size: 70%;">Use your benefit today ></a>
+  </span>
+<!--   <div class="line"></div> -->
+  <div class="circle">
+    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+    <i class="fa fa-exclamation hide" aria-hidden="true"></i>    
+  </div>
+</div>
+
+
+
+    
     <div class="row">
       <div class="col text-center" id="page_content_1">
           <h2 class="text-center">Section for Page Content</h2>
@@ -102,5 +194,6 @@
 
     <!-- Custom JS -->
     <script src="static/email_trigger.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
