@@ -31,6 +31,7 @@
   color:black;
   font-family:Helvetica;
   text-align:center;
+  margin-right: 10px;
 }
 .sidepanell:before {
   content:'';
@@ -80,6 +81,30 @@
 }
 .hide {
   display:none;
+}
+
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+h1 {
+    padding-left: 50px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
     </style>
@@ -137,7 +162,7 @@
     <!-- Here is an example Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1>ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatum voluptate voluptatem accusantium praesentium consequuntur dolorum quas, reiciendis facilis harum tempora maiores placeat? Quibusdam est magni eius, minus modi aperiam.</h1>
+        <img class="center" src="Amazon_prime_student.png">    
       </div>
     </div>
 
@@ -164,21 +189,53 @@
 
 
     
-    <div class="row">
-      <div class="col text-center" id="page_content_1">
-          <h2 class="text-center">Section for Page Content</h2>
-          <!-- Other page content is defined here -->
+    <div>
+      <h1>Gaming</h1>
+      <div class="row">
+        <div class="column">
+          <img src="mouse.jpg" alt="Snow" >
+        </div>
+        <div class="column">
+          <img src="headset.jpg" alt="Forest" >
+        </div>
+        <div class="column">
+          <img src="fifa.jpg" alt="Mountains" >
+        </div>
+        <div class="column">
+            <img src="headset2.jpg" alt="Mountains" >
+          </div>
       </div>
-      <div class="col" id="page_content_2">
-          <h2 class="text-center">Section for Page Content</h2>
-          <!-- Other page content is defined here -->
-          <p class="text-center">
-              ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veniam quia doloremque nobis doloribus est eaque omnis laborum dignissimos perferendis, rem odit, sed enim nisi maxime facere impedit recusandae? Ipsum?
-          </p>
+      <br>
+      <h1>Health and Personal Care</h1>
+      <div class="row">
+        <div class="column">
+          <img src="protein.JPG" alt="Snow" >
+        </div>
+        <div class="column">
+          <img src="razor.JPG" alt="Forest" >
+        </div>
+        <div class="column">
+          <img src="23me.JPG" alt="Mountains" >
+        </div>
+        <div class="column">
+            <img src="toothbrush.JPG" alt="Mountains" >
+          </div>
       </div>
-      <div class="col" id="page_content_3">
-          <h2 class="text-center">Section for Page Content</h2>
-            <!-- Other page content is defined here -->
+      <br>
+      <h1>Food and Grocery Delivery</h1>
+      <div class="row">
+        <div class="column">
+          <img src="gummies.JPG" alt="Snow" >
+        </div>
+        <div class="column">
+          <img src="gum.JPG" alt="Forest" >
+        </div>
+        <div class="column">
+          <img src="redbull.JPG" alt="Mountains" >
+        </div>
+        <div class="column">
+            <img src="fero.JPG" alt="Mountains" >
+          </div>
       </div>
     </div>
     
