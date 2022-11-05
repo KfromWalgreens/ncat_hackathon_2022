@@ -41,7 +41,16 @@
         display: none;
       }
 
+      input[type="radio"]  {
+        display: none;
+      }
+
        input[type="checkbox"]:checked + label{
+        background-color: #bfb;
+        border-color: #4c4;
+    }
+
+    input[type="radio"]:checked + label{
         background-color: #bfb;
         border-color: #4c4;
     }
@@ -141,13 +150,13 @@
       </div>
       <h1>Do you want to travel?</h1>
       <div class="options3">
-        <input type="checkbox" id="options31"><label for="options31">Yes</label>
-        <input type="checkbox" id="options32"><label for="options32">No</label>
+        <input type="radio" id="options31" name="options3"><label for="options31">Yes</label>
+        <input type="radio" id="options32" name="options3"><label for="options32">No</label>
       </div>
       <h1>Are you interested in food delivery?</h1>
       <div class="options4">
-        <input type="checkbox" id="options41"><label for="options41">Yes</label>
-        <input type="checkbox" id="options42"><label for="options42">No</label>
+        <input type="radio" id="options41" name="options4"><label for="options41">Yes</label>
+        <input type="radio" id="options42" name="options4"><label for="options42">No</label>
         <br>
         <br>
         <button class="access" onclick="window.location.href='recommendations.html'">Access your savings!</button>
